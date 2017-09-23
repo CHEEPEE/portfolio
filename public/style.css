@@ -1,0 +1,31 @@
+body{
+    height: 100%;
+
+}.profile {
+  height: 40%;
+  width: 40%;
+  padding: 1px;
+  background: #ffffffff
+}
+.fixer{
+position: fixed;
+}
+.particles{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+}
+.headstart{
+  height: 100px;
+  width: 100%;
+}
+.maxHeight{
+  height: 100%;
+}
+.header{
+  font-weight: 300;
+}
+.top20{
+  padding-top: 50px;
+}
