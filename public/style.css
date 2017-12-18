@@ -1,11 +1,16 @@
+
+@font-face {
+  font-family: "deve.otf";
+  src: url("fonts/deve.otf");
+}
 body{
-    height: 100%;
+    background-color: #FFFFFF;
 
 }.profile {
-  height: 40%;
-  width: 40%;
+  
+  width: 100%;
   padding: 1px;
-  background: #ffffffff
+  
 }
 .fixer{
 position: fixed;
@@ -13,8 +18,7 @@ position: fixed;
 .particles{
   height: 100%;
   width: 100%;
-  z-index: -1;
-  position: fixed;
+  z-index: -10;
 }
 .headstart{
   height: 100px;
@@ -29,3 +33,35 @@ position: fixed;
 .top20{
   padding-top: 50px;
 }
+.profile-name
+{
+  font-size: 550%;
+  color:#959595;
+  text-align: center;
+  font-family: "deve.otf"
+}
+.temp{
+  height: 100px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.floater-left{
+  float: left;
+}
+.ifloater-rght{
+  float: right;
+}
+.profile-details{
+  padding-top: 20px;
+  font-size: 120%;
+}
+.identifier{
+  background-color: grey;
+
+}
+.showcase{
+  background-color:#959595;
+  height: 500px;
+  width: 100%;
+}
+

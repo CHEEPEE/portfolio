@@ -1,0 +1,38 @@
+.height-cover{
+    height: 100% !important;
+}
+.row{
+    margin-bottom: 0px;
+}
+.top-space-10{
+    margin-top: 10%;
+}
+.top-space-20{
+    margin-top: 20%;
+}
+.profile-name{
+    color: teal;
+    margin: 3%;
+    padding: 15px;
+    border: solid teal 1.3px;
+    border-radius: 3px;
+}
+.profile-name:hover{
+    margin-top: 2.98%;
+    border: solid teal 1.3px;
+    background-color: teal;
+    color: white;
+    border-radius: 35px;
+    transition: .5s;
+    
+}
+.p-name{
+    margin: 5px;
+}
+.fixer{
+position: fixed;
+}
+.particles{
+  height: 100%;
+  width: 100%;
+}

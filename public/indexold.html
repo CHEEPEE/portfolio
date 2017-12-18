@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="particles/particles.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDIsG3k8EQU7nEv-gOgqvRg6G6jAI9hyeI",
+        authDomain: "keji-lab.firebaseapp.com",
+        databaseURL: "https://keji-lab.firebaseio.com",
+        projectId: "keji-lab",
+        storageBucket: "keji-lab.appspot.com",
+        messagingSenderId: "646864783466"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+
+
+
+
+  <!--end for initializtion-->
+
+</head>
+  <body onload="writeUserData('1','3','2')" class=" black">
+
+    <div id="particles-js" class="cover particles">
+      <script src="particles/particles.js"></script>
+      <script src="particles/app.js"></script>
+    </div>
+
+    <div class="fixer">
+
+        <div class="headstart">
+        </div>
+
+        <div class="row">
+          <div class="row center s12 container ">
+        <img class="circle responsive-img profile white" src="https://scontent.fceb2-2.fna.fbcdn.net/v/t1.0-9/16114756_1360356887370370_258715371253170530_n.jpg?oh=2c39b4612e2e173c65e245a6c8636abd&oe=5A3674FD">
+      </div>
+      <div class="row center s12">
+      <a id= "username"class="waves-effect waves-teal btn white black-text title">Kenneth Jie Padasas</a>
+      </div>
+      <!-- cards -->
+  <div class="row s12 white darken-3">
+    <div class="row s12 container">
+
+      <h2 class="header red-text top20">Skills </h2>
+    <!-- Android Application Development -->
+
+      <div class="col s12 m4">
+              <div class="card small">
+             <div class="card-image waves-effect waves-block waves-light">
+               <img class="activator" src="https://lh3.googleusercontent.com/VLeu0ele_zzZqzaq9ILVq71hF8MV1o4R446coHjrunWC8gBP0hbs1iyrxEZj5tgt4iY">
+             </div>
+             <div class="card-content">
+               <span class="card-title activator grey-text text-darken-4">Android Application Developer
+               <h6 class="text small"><a href="https://play.google.com/store/apps/dev?id=7252931775384321911&hl=en">Published Applications</a></h6>
+                </span>
+             </div>
+             <div class="card-reveal">
+               <span class="card-title grey-text text-darken-4">His Story<i class="material-icons right">close</i></span>
+               <p class="flow-text">Kenneth Jie Padasas started buiding Mobile Apps Since 2016</p>
+             </div>
+           </div>
+        </div>
+<!-- front end development -->
+        <div class="col s12 m4">
+                <div class="card small">
+               <div class="card-image waves-effect waves-block waves-light">
+                 <img class="activator" src="http://getposture.com/wp-content/uploads/2015/02/code_front_end.png">
+               </div>
+               <div class="card-content">
+                 <span class="card-title activator grey-text text-darken-4">Front-end Web Developer</span>
+                 <h6 class="text small"><a href="https://play.google.com/store/apps/dev?id=7252931775384321911&hl=en">Published Website</a></h6>
+               </div>
+               <div class="card-reveal">
+                 <span class="card-title grey-text text-darken-4">His Story<i class="material-icons right">close</i></span>
+                 <p class="flow-text">Kenneth Jie Padasas started buiding Mobile Apps Since 2016</p>
+               </div>
+             </div>
+          </div>
+<!-- back end -->
+          <div class="col s12 m4">
+                  <div class="card small">
+                 <div class="card-image waves-effect waves-block waves-light">
+                   <img class="activator" src="http://academiatecnologia.ucr.ac.cr/sites/default/files/styles/7_enorme/public/multimedia/frontEnd.png?itok=_aH3qWwt">
+                 </div>
+                 <div class="card-content">
+                   <span class="card-title activator grey-text text-darken-4">Back-end Web-Developer
+                   <h6 class="text small"><a href="https://play.google.com/store/apps/dev?id=7252931775384321911&hl=en">Published Website</a></h6>
+                 </div>
+                 <div class="card-reveal">
+                   <span class="card-title grey-text text-darken-4">His Story<i class="material-icons right">close</i></span>
+                   <p class="flow-text">Kenneth Jie Padasas started buiding Mobile Apps Since 2016</p>
+                 </div>
+               </div>
+            </div>
+          <div>
+      </div>
+    </div>
+    <div class="white">
+      <div class="container">
+      <h2 class="header red-text top20">Experiences </h2>
+      <!-- Collapsible -->
+
+            <ul class="collapsible popout" data-collapsible="accordion">
+       <li>
+         <div class="collapsible-header"><i class="material-icons">filter_drama</i>Former Website Content Writer At RR Production</div>
+         <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+       </li>
+       <li>
+         <div class="collapsible-header"><i class="material-icons">place</i>Android Application Developer (Internship)</div>
+         <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+       </li>
+       <li>
+         <div class="collapsible-header"><i class="material-icons">whatshot</i>Freelance Android Developer Front-End and Back-end Web Developer</div>
+         <div class="collapsible-body">
+            <span class="container">
+                  
+           </span>
+         </div>
+       </li>
+      </ul>
+
+
+    </div>
+    </div>
+  <div>
+
+</body>
+</html>
