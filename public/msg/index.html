@@ -1,0 +1,88 @@
+<!DOCTYPE>
+<html>
+
+    <head>
+            <link rel="stylesheet" type="text/css" href="semanticui/semantic.min.css">
+            <script
+              src="semanticui/jquery-3.1.1.min.js"
+              integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+              crossorigin="anonymous"></script>
+            <script src="semanticui/semantic.min.js"></script>
+           
+
+        
+    </head>
+    <body class="black">
+
+      <div class="ui grid">
+          <div class="sixteen wide column">
+              <div class="ui black inverted segment">
+                  <div class="ui inverted centered grid">
+                      <div class="six wide tablet eight wide computer column">
+                          <div class="ui inverted form">
+                            <div class="field">
+                                <label>Message for Kenneth Jie before 2017 ends</label>
+                                <input id="msgBox" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;); cursor: auto;" type="text">
+                     
+                             </div>
+                             <div class="inline field">
+                                <button class="teal ui button" onclick="writeUserData()">Submit Message</button>
+                             </div>
+
+                          </div>
+                      </div>
+                   
+                  </div>
+                </div>
+          </div>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js"></script>
+      
+      <!-- Leave out Storage -->
+      <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-storage.js"></script> -->
+      
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+            <script>
+            // Initialize Firebase
+            // TODO: Replace with your project's customized code snippet
+            var config = {
+                apiKey: "AIzaSyDIsG3k8EQU7nEv-gOgqvRg6G6jAI9hyeI",
+                authDomain: "keji-lab.firebaseapp.com",
+                databaseURL: "https://keji-lab.firebaseio.com",
+                storageBucket: "keji-lab.appspot.com",
+                messagingSenderId: "646864783466",
+            };
+
+          
+            firebase.initializeApp(config);
+            var database = firebase.database();
+         
+
+
+            function writeUserData() {
+                var msg = document.getElementById("msgBox").value;
+                var newPostKey = firebase.database().ref().child('posts').push().key;
+                var timeStamp = Date();
+                firebase.database().ref(newPostKey).set({
+                    message: msg,
+                    date: timeStamp,
+                    profile_picture : 'url'
+                });
+                alert("Submitted");
+            }
+            $('#msgBox').on('keyup', function(e) {
+                if (e.keyCode === 13) {
+                    $('#mySubmit').click();
+                  
+                    writeUserData();
+                }
+            });
+
+     </script>
+      
+    </body>
+</html>  

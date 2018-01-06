@@ -36,3 +36,14 @@ position: fixed;
   height: 100%;
   width: 100%;
 }
+.social-link:hover{
+    
+    border: solid teal 1.3px;
+    background-color: teal;
+    color: white;
+    border-radius: 35px;
+    transition: .5s;
+}
+.social-link{
+    color: teal;
+}
