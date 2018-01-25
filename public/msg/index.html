@@ -8,9 +8,9 @@
               integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
               crossorigin="anonymous"></script>
             <script src="semanticui/semantic.min.js"></script>
-           
 
-        
+
+
     </head>
     <body class="black">
 
@@ -23,7 +23,7 @@
                             <div class="field">
                                 <label>Message for Kenneth Jie before 2017 ends</label>
                                 <input id="msgBox" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR4nGP6zwAAAgcBApocMXEAAAAASUVORK5CYII=&quot;); cursor: auto;" type="text">
-                     
+
                              </div>
                              <div class="inline field">
                                 <button class="teal ui button" onclick="writeUserData()">Submit Message</button>
@@ -31,7 +31,7 @@
 
                           </div>
                       </div>
-                   
+
                   </div>
                 </div>
           </div>
@@ -41,10 +41,10 @@
       <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
       <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script>
       <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js"></script>
-      
+
       <!-- Leave out Storage -->
       <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-storage.js"></script> -->
-      
+
       <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
             <script>
             // Initialize Firebase
@@ -57,10 +57,10 @@
                 messagingSenderId: "646864783466",
             };
 
-          
+
             firebase.initializeApp(config);
             var database = firebase.database();
-         
+
 
 
             function writeUserData() {
@@ -77,12 +77,12 @@
             $('#msgBox').on('keyup', function(e) {
                 if (e.keyCode === 13) {
                     $('#mySubmit').click();
-                  
+
                     writeUserData();
                 }
             });
 
      </script>
-      
+
     </body>
-</html>  
+</html>
