@@ -36,6 +36,13 @@
                 </div>
           </div>
       </div>
+
+
+      <div class="ui inverted container  segment">
+        <div id="items" class="ui inverted relaxed divided list">
+
+        </div>
+      </div>
       <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
       <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
@@ -67,7 +74,7 @@
                 var msg = document.getElementById("msgBox").value;
                 var newPostKey = firebase.database().ref().child('posts').push().key;
                 var timeStamp = Date();
-                firebase.database().ref(newPostKey).set({
+                firebase.database().ref('msg/' +newPostKey).set({
                     message: msg,
                     date: timeStamp,
                     profile_picture : 'url'
@@ -81,6 +88,18 @@
                     writeUserData();
                 }
             });
+
+            var getmsg = firebase.database().ref('msg/');
+              getmsg.on('value', function(snapshot) {
+              // updateStarCount(postElement, snapshot.val());
+              snapshot.forEach(function(childSnapshot) {
+                  var childKey = childSnapshot.key;
+                  var childData = childSnapshot.val();
+                 document.getElementById('items').innerHTML += "<div class='item'><div class='content'><h1>"+childData.message+"</h1><p>"+childData.date+"</p></div></div>";
+
+                });
+              });
+
 
      </script>
 

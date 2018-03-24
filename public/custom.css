@@ -24,7 +24,7 @@
     color: white;
     border-radius: 35px;
     transition: .5s;
-    
+
 }
 .p-name{
     margin: 5px;
@@ -37,7 +37,7 @@ position: fixed;
   width: 100%;
 }
 .social-link:hover{
-    
+
     border: solid teal 1.3px;
     background-color: teal;
     color: white;

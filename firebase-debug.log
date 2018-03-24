@@ -1,0 +1,32 @@
+[debug] [2018-01-27T19:20:11.925Z] ----------------------------------------------------------------------
+[debug] [2018-01-27T19:20:11.927Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Keji's Lab\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-01-27T19:20:11.928Z] CLI Version:   3.16.0
+[debug] [2018-01-27T19:20:11.928Z] Platform:      win32
+[debug] [2018-01-27T19:20:11.928Z] Node Version:  v6.10.3
+[debug] [2018-01-27T19:20:11.928Z] Time:          Sun Jan 28 2018 03:20:11 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-01-27T19:20:11.928Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-27T19:20:11.942Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-27T19:20:11.943Z] > authorizing via signed-in user
+[debug] [2018-01-27T19:20:11.945Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/keji-lab  
+  
+ Sun Jan 28 2018 03:20:11 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-01-27T19:20:13.243Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-27T19:20:13.244Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/keji-lab/tokens  
+  
+ Sun Jan 28 2018 03:20:13 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-01-27T19:20:14.275Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Keji's Lab\portfol\Portfolio\portfolio'...
+[info] 
+[debug] [2018-01-27T19:20:14.282Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/keji-lab  
+  
+ Sun Jan 28 2018 03:20:14 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-01-27T19:20:15.745Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-27T19:20:15.745Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/646864783466/clients/_:getWebAppConfig  
+  
+ Sun Jan 28 2018 03:20:15 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-01-27T19:20:17.212Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
