@@ -4,13 +4,14 @@
   src: url("fonts/deve.otf");
 }
 body{
-    background-color: #FFFFFF;
+    background-color: #000;
 
-}.profile {
-  
+}
+.profile {
+
   width: 100%;
   padding: 1px;
-  
+
 }
 .fixer{
 position: fixed;
@@ -59,9 +60,11 @@ position: fixed;
   background-color: grey;
 
 }
+.portfolio{
+  background-color: white;
+}
 .showcase{
   background-color:#959595;
   height: 500px;
   width: 100%;
 }
-

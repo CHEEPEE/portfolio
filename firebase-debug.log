@@ -1,32 +1,79 @@
-[debug] [2018-01-27T19:20:11.925Z] ----------------------------------------------------------------------
-[debug] [2018-01-27T19:20:11.927Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Keji's Lab\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
-[debug] [2018-01-27T19:20:11.928Z] CLI Version:   3.16.0
-[debug] [2018-01-27T19:20:11.928Z] Platform:      win32
-[debug] [2018-01-27T19:20:11.928Z] Node Version:  v6.10.3
-[debug] [2018-01-27T19:20:11.928Z] Time:          Sun Jan 28 2018 03:20:11 GMT+0800 (Malay Peninsula Standard Time)
-[debug] [2018-01-27T19:20:11.928Z] ----------------------------------------------------------------------
+[debug] [2018-04-12T17:07:08.778Z] ----------------------------------------------------------------------
+[debug] [2018-04-12T17:07:08.781Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Keji's Lab\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-04-12T17:07:08.781Z] CLI Version:   3.16.0
+[debug] [2018-04-12T17:07:08.783Z] Platform:      win32
+[debug] [2018-04-12T17:07:08.783Z] Node Version:  v6.10.3
+[debug] [2018-04-12T17:07:08.785Z] Time:          Fri Apr 13 2018 01:07:08 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:08.786Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-01-27T19:20:11.942Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-01-27T19:20:11.943Z] > authorizing via signed-in user
-[debug] [2018-01-27T19:20:11.945Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/keji-lab  
+[debug] [2018-04-12T17:07:08.820Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-12T17:07:08.830Z] > authorizing via signed-in user
+[debug] [2018-04-12T17:07:08.839Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-12T17:07:08.840Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/0QqU9jJGzDhL2W8L_im_tOxFCru3gYD8teSXGP_WWcJxwKB9NohVjoYA5oLYV3Xq',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Apr 13 2018 01:07:08 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:09.693Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-12T17:07:09.777Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/keji-lab  
   
- Sun Jan 28 2018 03:20:11 GMT+0800 (Malay Peninsula Standard Time)
-[debug] [2018-01-27T19:20:13.243Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-27T19:20:13.244Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/keji-lab/tokens  
+ Fri Apr 13 2018 01:07:09 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:11.786Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-12T17:07:11.789Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/keji-lab/tokens  
   
- Sun Jan 28 2018 03:20:13 GMT+0800 (Malay Peninsula Standard Time)
-[debug] [2018-01-27T19:20:14.275Z] <<< HTTP RESPONSE 200
+ Fri Apr 13 2018 01:07:11 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:12.681Z] <<< HTTP RESPONSE 200
 [info] 
-[info] === Serving from 'C:\Users\Keji's Lab\portfol\Portfolio\portfolio'...
+[info] === Deploying to 'keji-lab'...
 [info] 
-[debug] [2018-01-27T19:20:14.282Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/keji-lab  
+[info] i  deploying database, functions, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-04-12T17:07:14.498Z] >>> HTTP REQUEST PUT https://keji-lab.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Fri Apr 13 2018 01:07:14 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:15.903Z] <<< HTTP RESPONSE 200
+[info] +  database: rules syntax for database keji-lab is valid
+[debug] [2018-04-12T17:07:15.903Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.7"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-04-12T17:07:15.903Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/keji-lab?view=CONSUMER_VIEW  
   
- Sun Jan 28 2018 03:20:14 GMT+0800 (Malay Peninsula Standard Time)
-[debug] [2018-01-27T19:20:15.745Z] <<< HTTP RESPONSE 200
-[debug] [2018-01-27T19:20:15.745Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/646864783466/clients/_:getWebAppConfig  
+ Fri Apr 13 2018 01:07:15 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:15.903Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/keji-lab?view=CONSUMER_VIEW  
   
- Sun Jan 28 2018 03:20:15 GMT+0800 (Malay Peninsula Standard Time)
-[debug] [2018-01-27T19:20:17.212Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] +  hosting: Local server: http://localhost:5000
-
+ Fri Apr 13 2018 01:07:15 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:18.056Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-12T17:07:18.380Z] <<< HTTP RESPONSE 200
+[info] +  functions: all necessary APIs are enabled
+[debug] [2018-04-12T17:07:18.383Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/keji-lab  
+  
+ Fri Apr 13 2018 01:07:18 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:18.384Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/keji-lab/apiKeys  
+  
+ Fri Apr 13 2018 01:07:18 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:07:20.151Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-12T17:07:20.305Z] <<< HTTP RESPONSE 200
+[info] i  functions: preparing functions directory for uploading...
+[debug] [2018-04-12T17:08:15.040Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/keji-lab/configs  
+  
+ Fri Apr 13 2018 01:08:15 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-04-12T17:08:16.065Z] <<< HTTP RESPONSE 200
+[info] i  hosting: preparing public directory for upload...
+[debug] [2018-04-12T17:08:24.951Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/keji-lab/uploads/-L9uoqEXJxi8Lf51gxV5?fileCount=369&message=  
+  
+ Fri Apr 13 2018 01:08:24 GMT+0800 (Malay Peninsula Standard Time)

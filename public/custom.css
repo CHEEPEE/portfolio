@@ -1,5 +1,6 @@
 .height-cover{
     height: 100% !important;
+
 }
 .row{
     margin-bottom: 0px;
@@ -31,10 +32,13 @@
 }
 .fixer{
 position: fixed;
+    z-index: -1;
+
 }
 .particles{
   height: 100%;
   width: 100%;
+
 }
 .social-link:hover{
 
@@ -46,4 +50,79 @@ position: fixed;
 }
 .social-link{
     color: teal;
+}
+
+.black{
+    background-color: #262628;
+}
+.t-white{
+    color: white !important;
+}
+.name{
+    padding-left: 100px;
+ padding-top: -20px;
+ font-family: "QanelasSoftDEMO-ExtraBold.otf";
+ font-size: 7em;
+
+}
+.cover{
+    height: 100vh;
+
+
+}
+.absolute{
+    margin-left: 100px;
+}
+.sub-title{
+    padding-top: 100px;
+    padding-left: 100px;
+    font-size: 3em;
+
+    font-family: "QanelasSoftDEMO-ExtraBold.otf";
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 0px solid white;
+}
+@font-face{
+    font-family: "QanelasSoftDEMO-ExtraBold.otf";
+    src: url("fonts/QanelasSoftDEMO-ExtraBold.otf");
+}
+.c-btn{
+    margin-top: 20vh;
+    width: 200px;
+    text-align: center;
+    color:white;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid white;
+    border-radius: 50px;
+    transition: .3s;
+
+}
+.c-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+.sidenave{
+    padding-top: 30px;
+}
+li{
+    padding: 10px;
+}
+.portfolio{
+    height: 100vh;
+    background-color: white;
+}
+.row2-title{
+  padding: 75px;
+}
+.a-dev{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.car{
+  height: 70vh;
 }
