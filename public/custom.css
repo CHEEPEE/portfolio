@@ -32,7 +32,12 @@
 }
 .fixer{
 position: fixed;
-    z-index: -1;
+    z-index: -2;
+
+}
+.fixer-work{
+position: fixed;
+    z-index:-1;
 
 }
 .particles{
@@ -59,10 +64,10 @@ position: fixed;
     color: white !important;
 }
 .name{
-    padding-left: 100px;
+
  padding-top: -20px;
  font-family: "QanelasSoftDEMO-ExtraBold.otf";
- font-size: 7em;
+ font-size: 7rem;
 
 }
 .cover{
@@ -75,9 +80,8 @@ position: fixed;
 }
 .sub-title{
     padding-top: 100px;
-    padding-left: 100px;
-    font-size: 3em;
 
+    font-size: 3em;
     font-family: "QanelasSoftDEMO-ExtraBold.otf";
 }
 .avatar{
@@ -114,10 +118,15 @@ li{
 }
 .portfolio{
     height: 100vh;
-    background-color: white;
+
 }
+
+
 .row2-title{
-  padding: 75px;
+  padding-top: 75px;
+  margin: 3%;
+  font-family: "QanelasSoftDEMO-ExtraBold.otf";
+
 }
 .a-dev{
   padding-top: 30px;
@@ -125,4 +134,63 @@ li{
 }
 .car{
   height: 70vh;
+}
+.exp-title{
+    padding: 50px;
+}
+.work-date{
+
+}
+.nav-arrow{
+  padding-top: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .name{
+   padding: 20px;
+   font-family: "QanelasSoftDEMO-ExtraBold.otf";
+   font-size: 3rem;
+  }
+  .sub-title{
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "QanelasSoftDEMO-ExtraBold.otf";
+    font-size: 2rem;
+  }
+}
+
+.line{
+  width: 9.5em;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  border-right: 2px solid rgba(255,255,255,0.75);
+  overflow: hidden;
+
+
+}
+
+
+.anim-typewriter{
+  animation: typewriter 3s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter{
+  from{
+    width: 0;
+  }
+  to{
+    width: 9.5em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from{
+    border-right-color: rgba(255,255,255,0.75);
+  }
+  to{
+    border-right-color: transparent;
+  }
 }

@@ -1,0 +1,34 @@
+html{
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+@font-face {
+font-family: 'Billabong';
+font-style: normal;
+font-weight: normal;
+src: local('Billabong'), url('fonts/Billabong.woff') format('woff');
+}
+.cover{
+
+  background-image: url("images/food.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.full-height{
+  height: 100vh;
+}
+.cover-layer-two{
+  background-color: rgba(26, 0, 0, 0.6);
+}
+.title{
+  padding-top: 20vh;
+  font-family: "Billabong";
+  color: #ececec;
+  text-align: center;
+  font-size: 12em;
+}
+.white{
+  background-color: white!important;
+}
