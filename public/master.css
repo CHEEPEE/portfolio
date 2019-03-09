@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400');
+body{
+  background: none;
+}
+.ms-btn{
+background: #FC7A56;
+background: -webkit-linear-gradient(top, #FC7A56, #F95862) !important;
+background: -o-linear-gradient(top, #FC7A56, #F95862) !important;
+background: -moz-linear-gradient(top, #FC7A56, #F95862) !important;
+background: linear-gradient(top, #FC7A56, #F95862) !important;
+border-radius: 20px;
+color: #fff;
+border-radius:1px solid #FC7A56 !important;
+font-family: 'Lato', sans-serif;
+
+
+}
+.ms-btn:hover{
+background: #fff!important;
+border-radius: 20px;
+color: #FC7A56;
+border-color: #FC7A56!important;
+border-width: 1px!important;
+border-style: solid!important;
+}
+.my-name{
+  /* font-family: 'Lato', sans-serif; */
+  font-family: Lato;
+  background: -webkit-linear-gradient(#FC7A56, #F95862);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ font-weight: 100;
+ line-height: 1;
+}
+
+@font-face{
+    font-family: "minimal";
+    src: url("fonts/minimal.otf");
+}
+.particles{
+  height: 100%;
+  width: 100%;
+
+}
+.fixer{
+position: fixed;
+    z-index: -2;
+
+}
+.cover{
+    height: 100vh;
+}
+
+.font-lato{
+    font-family: Lato;
+    font-weight: 100;
+    line-height: 1;
+}
+.text-orange{
+  color:#fc7a56!important;
+}
+.orange{
+  background-color: #fc7a56!important;
+}

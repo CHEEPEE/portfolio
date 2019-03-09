@@ -1,3 +1,4 @@
+
 .height-cover{
     height: 100% !important;
 
@@ -72,8 +73,6 @@ position: fixed;
 }
 .cover{
     height: 100vh;
-
-
 }
 .absolute{
     margin-left: 100px;

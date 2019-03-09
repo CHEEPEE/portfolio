@@ -1,0 +1,41 @@
+[debug] [2018-05-03T13:25:06.195Z] ----------------------------------------------------------------------
+[debug] [2018-05-03T13:25:06.197Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Keji's Lab\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-05-03T13:25:06.198Z] CLI Version:   3.16.0
+[debug] [2018-05-03T13:25:06.198Z] Platform:      win32
+[debug] [2018-05-03T13:25:06.198Z] Node Version:  v6.10.3
+[debug] [2018-05-03T13:25:06.199Z] Time:          Thu May 03 2018 21:25:06 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-05-03T13:25:06.199Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-05-03T13:25:06.292Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-05-03T13:25:06.307Z] > authorizing via signed-in user
+[debug] [2018-05-03T13:25:06.313Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-05-03T13:25:06.313Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/PBd_6oOPvnYVrPnD4cLW0SX8489zqtjI-0ir8fYW1s8',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu May 03 2018 21:25:06 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-05-03T13:25:07.330Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-03T13:25:07.437Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/keji-lab  
+  
+ Thu May 03 2018 21:25:07 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-05-03T13:25:09.623Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-03T13:25:09.624Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/keji-lab/tokens  
+  
+ Thu May 03 2018 21:25:09 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-05-03T13:25:10.888Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Keji's Lab\portfol\Portfolio\portfolio'...
+[info] 
+[debug] [2018-05-03T13:25:10.895Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/keji-lab  
+  
+ Thu May 03 2018 21:25:10 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-05-03T13:25:13.372Z] <<< HTTP RESPONSE 200
+[debug] [2018-05-03T13:25:13.373Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/646864783466/clients/_:getWebAppConfig  
+  
+ Thu May 03 2018 21:25:13 GMT+0800 (Malay Peninsula Standard Time)
+[debug] [2018-05-03T13:25:15.520Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+

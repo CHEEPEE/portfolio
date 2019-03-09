@@ -20,10 +20,11 @@ src: local('Billabong'), url('fonts/Billabong.woff') format('woff');
   height: 100vh;
 }
 .cover-layer-two{
-  background-color: rgba(26, 0, 0, 0.6);
+  background-color: rgba(32, 42, 58,0.7);
+  /* background-color: rgba(194, 243, 249,1); */
 }
 .title{
-  padding-top: 20vh;
+  padding-top: 10vh;
   font-family: "Billabong";
   color: #ececec;
   text-align: center;
@@ -31,4 +32,7 @@ src: local('Billabong'), url('fonts/Billabong.woff') format('woff');
 }
 .white{
   background-color: white!important;
+}
+.cover-logo{
+  margin-top: 30vh;
 }

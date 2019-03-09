@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- UIkit CSS -->
+
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.css">
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js" ></script>
+    <link href="../assets/ionicons/css/ionicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="../js/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+
+      <button id="openNav" style="border:none;background:none;" onclick="w3_open()"><i class="mr-3" data-feather = "menu"></i></button>
+      <button id="closeNav" style="border:none;background:none;"
+      onclick="w3_close()"><i class="mr-3" data-feather = "menu"></i></button>
+      <h3 class=" font-weight-bold">KENNETH JIE</h3>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+    
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Log Out</button> -->
+        </form>
+      </div>
+    </nav>
+    <div class="w3-sidebar pt-3 w3-bar-block animated bounceInLeft" style="display:none" id="mySidebar">
+      <div class="nav flex-column nav-pills m-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Porfolio</a>
+        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false" onclick="getAnnouncement();">Moments</a>
+    </div>
+   </div>
+   <div>
+      <div id="main" class="row pl-5 pr-5 pt-5 animated bounceInRight mt-5">
+        <div class="row w-100">
+          <div class="col-sm-12">
+            <h1 class="col-sm-12 font-weight-bold">MOMENTS</h1>
+            <div class="row" id="postContainer">
+
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+
+
+  <!-- Modal -->
+<div id="modalPostImageContainer">
+
+</div>
+
+  <script>
+
+  function w3_open() {
+    document.getElementById("main").style.marginLeft = "15%";
+    document.getElementById("mySidebar").style.width = "15%";
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("openNav").style.display = 'none';
+    document.getElementById("closeNav").style.display = "inline-block";
+  }
+  function w3_close() {
+    document.getElementById("main").style.marginLeft = "0%";
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("openNav").style.display = "inline-block";
+    document.getElementById("closeNav").style.display = "none";
+  }
+  w3_open();
+  </script>
+  </body>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDIsG3k8EQU7nEv-gOgqvRg6G6jAI9hyeI",
+    authDomain: "keji-lab.firebaseapp.com",
+    databaseURL: "https://keji-lab.firebaseio.com",
+    projectId: "keji-lab",
+    storageBucket: "keji-lab.appspot.com",
+    messagingSenderId: "646864783466"
+  };
+  var app = firebase.initializeApp(config);
+</script>
+<script>
+  // Initialize Firebase
+  var shown = false;
+  function addAnnouncementColappese(){
+    if (shown == true) {
+      console.log('shown');
+    }else {
+      $("#addAnnouncementColappese").collapse('show');
+      shown = true;
+    }
+  }
+  function addAnnouncementColappeseClose(){
+    $("#addAnnouncementColappese").collapse("hide");
+    shown = false;
+  }
+</script>
+  <script type="text/babel" src="dashboard.js"></script>
+  <script>
+  feather.replace();
+</script>
+
+</html>
